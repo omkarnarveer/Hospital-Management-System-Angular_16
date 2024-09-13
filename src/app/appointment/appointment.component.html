@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Hospitals Dashboard</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <hr>
+        <h2 class="text-center">Appointment List</h2>
+        <div class="alert-info text-center">
+            Welcome to the Appointment Dashboard. Please find the patient list below!
+        </div>
+        <hr>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Symptoms</th>
+                        <th>Number</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let appointment of appointments">
+                        <td>{{ appointment.id }}</td> 
+                        <td>{{ appointment.name }}</td>
+                        <td>{{ appointment.age }}</td>
+                        <td>{{ appointment.symptoms }}</td>
+                        <td>{{ appointment.number }}</td>
+                        <td class="action-buttons">
+                
+                            <button (click)="deleteAppointment(appointment.id)" class="btn btn-delete btn-sm">
+                                <i class="fa fa-trash"></i> Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

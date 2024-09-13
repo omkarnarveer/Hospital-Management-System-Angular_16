@@ -1,0 +1,189 @@
+/* Global Navigation Bar Styles */
+.admin-layout {
+  display: flex;
+}
+
+nav.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(135deg, #0056b3, #007bff);
+  color: #fff;
+  padding: 10px;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+nav.sidebar:hover {
+  transform: translateX(6px);
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
+}
+
+nav.sidebar .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 10px;
+}
+
+nav.sidebar .logo img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: transform 0.3s ease;
+}
+
+nav.sidebar .logo img:hover {
+  transform: scale(1.1);
+}
+
+nav.sidebar .logo h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4em;
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+nav.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.sidebar li {
+  margin: 10px 0;
+}
+
+nav.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+nav.sidebar a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+nav.sidebar a:hover::before {
+  width: 100%;
+  background: #fff;
+}
+
+nav.sidebar a.active,
+nav.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateX(3px);
+}
+
+/* Content Styles */
+.content {
+  margin-left: 200px; /* Same width as sidebar */
+  padding: 20px;
+  width: calc(100% - 200px); /* Adjusted width for content area */
+  background: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.content:hover {
+  background-color: #f5f7fa;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  nav.sidebar {
+    width: 180px; /* Adjusted width for tablets */
+  }
+
+  .content {
+    margin-left: 180px; /* Adjusted margin for content */
+    width: calc(100% - 180px); /* Adjusted width for content */
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  nav.sidebar {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    transform: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav.sidebar .logo {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  nav.sidebar .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  nav.sidebar .logo h1 {
+    font-size: 1.2em;
+  }
+
+  nav.sidebar ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav.sidebar li {
+    margin: 0 8px; /* Adjusted margin for horizontal layout */
+  }
+
+  nav.sidebar a {
+    padding: 6px 10px; /* Adjusted padding */
+  }
+
+  .content {
+    margin-top: 50px; /* Space for horizontal navbar */
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav.sidebar .logo img {
+    width: 30px; /* Even smaller logo */
+  }
+
+  nav.sidebar .logo h1 {
+    font-size: 1em;
+  }
+
+  nav.sidebar a {
+    padding: 4px 8px; /* Adjusted padding for very small screens */
+  }
+}

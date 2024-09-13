@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Adjusted to fit form layout */
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ensure the container does not overlap with the sidebar */
+    margin-left: 220px; /* Adjust based on the sidebar width */
+    padding-left: 20px; /* Ensure padding is consistent */
+}
+
+h2 {
+    color: #007bff;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.table-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Button Styles */
+.update-button, .delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.update-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.update-button:hover, .delete-button:hover {
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+.form-container {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        margin-left: 200px; /* Adjust based on the sidebar width */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0; /* Reset margin for smaller screens */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

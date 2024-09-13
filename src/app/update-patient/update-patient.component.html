@@ -1,0 +1,53 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div class="container">
+
+
+    <hr>
+    <h2 class="text-center">Add Patient</h2>
+    <div class="alert-info text-center">
+        Welcome to the Appointment Dashboard. Please find the patient list below!
+    </div>
+    <hr>
+
+<div class="container">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter Name" class="form-control" [(ngModel)]="patient.name" required/>
+    </div>
+
+    <div class="form-group">
+      <label>Age</label>
+      <input type="text" id="age" name="age" placeholder="Enter Your Age" class="form-control" [(ngModel)]="patient.age" required/>
+    </div>
+
+    <div class="form-group">
+      <label>Blood</label>
+      <input type="text" id="blood" name="blood" placeholder="Enter Your Blood Group" class="form-control" [(ngModel)]="patient.blood" required/>
+    </div>
+
+    <div class="form-group">
+      <label>Prescription</label>
+      <input type="text" id="prescription" name="prescription" placeholder="Enter Prescription" class="form-control" [(ngModel)]="patient.prescription" required/>
+    </div>
+
+    <div class="form-group">
+      <label>Dose</label>
+      <input type="text" id="dose" name="dose" placeholder="Enter Your Dose" class="form-control" [(ngModel)]="patient.dose" required/>
+    </div>
+
+    <div class="form-group">
+      <label>Fees</label>
+      <input type="text" id="fees" name="fees" placeholder="Enter Fees" class="form-control" [(ngModel)]="patient.fees" required/>
+    </div>
+
+    <div class="form-group">
+      <label>Urgency</label>
+      <input type="text" id="urgency" name="urgency" placeholder="Enter Urgency" class="form-control" [(ngModel)]="patient.urgency" required/>
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

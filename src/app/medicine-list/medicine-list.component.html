@@ -1,0 +1,49 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div class="container">
+
+
+    <hr>
+    <h2 class="text-center">Medicine List</h2>
+    <div class="alert-info text-center">
+        Welcome to the Appointment Dashboard. Please find the patient list below!
+    </div>
+    <hr>
+
+<div class="container mt-4">
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Brand</th>
+        <th>Dosage Form</th>
+        <th>Strength</th>
+        <th>Quantity</th>
+        <th>Expiration Date</th>
+        <th>Price</th>
+        <th>Prescription Required</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let medicine of medicines">
+        <td>{{ medicine.id }}</td>
+        <td>{{ medicine.name }}</td>
+        <td>{{ medicine.brand }}</td>
+        <td>{{ medicine.dosageForm }}</td>
+        <td>{{ medicine.strength }}</td>
+        <td>{{ medicine.quantity }}</td>
+        <td>{{ medicine.expirationDate | date }}</td>
+        <td>{{ medicine.price | currency:'INR':'symbol' }}</td>
+        <td>{{ medicine.prescriptionRequired ? 'Yes' : 'No' }}</td>
+        <td class="action-buttons">
+          <button class="btn btn-warning" (click)="edit(medicine.id)"><i class="fas fa-pencil-alt"></i> Update</button>
+          <button class="btn btn-danger" (click)="delete(medicine.id)"><i class="fas fa-trash-alt"></i> Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

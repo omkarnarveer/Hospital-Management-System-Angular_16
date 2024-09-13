@@ -1,0 +1,46 @@
+<div class="container">
+  <hr>
+  <h2 class="text-center">Patient List</h2>
+  <div class="alert-info text-center">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      Welcome to the Patient Dashboard. Please find the patient list below!
+  </div>
+  <hr>
+
+  <div class="dashboard">
+    <div class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Blood Type</th>
+                    <th>Prescription</th>
+                    <th>Dose</th>
+                    <th>Urgency</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let patient of patients">
+                    <td>{{ patient.id }}</td>
+                    <td>{{ patient.name }}</td>
+                    <td>{{ patient.age }}</td>
+                    <td>{{ patient.blood }}</td>
+                    <td>{{ patient.prescription }}</td>
+                    <td>{{ patient.dose }}</td>
+                    <td>{{ patient.urgency }}</td>
+                    <td class="action-buttons">
+                        <button class="btn btn-update" (click)="update(patient.id)">
+                            <i class="fas fa-pencil-alt"></i> Update
+                        </button>
+                        <button class="btn btn-delete" (click)="deletePatient(patient.id)">
+                            <i class="fas fa-trash-alt"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

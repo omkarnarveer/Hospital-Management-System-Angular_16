@@ -1,0 +1,66 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div class="container">
+
+
+    <hr>
+    <h2 class="text-center">Update Medicine</h2>
+    <div class="alert-info text-center">
+        Welcome to the Appointment Dashboard. Please find the patient list below!
+    </div>
+    <hr>
+
+<div class="container">
+  
+  <form (ngSubmit)=" onSubmit()">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" class="form-control" [(ngModel)]="medicine.name" />
+    </div>
+
+    <div class="form-group">
+      <label for="brand">Brand</label>
+      <input type="text" id="brand" name="brand" class="form-control" [(ngModel)]="medicine.brand" />
+    </div>
+
+    <div class="form-group">
+      <label for="genericName">Generic Name</label>
+      <input type="text" id="genericName" name="genericName" class="form-control" [(ngModel)]="medicine.genericName" />
+    </div>
+
+    <div class="form-group">
+      <label for="dosageForm">Dosage Form</label>
+      <input type="text" id="dosageForm" name="dosageForm" class="form-control" [(ngModel)]="medicine.dosageForm" />
+    </div>
+
+    <div class="form-group">
+      <label for="strength">Strength</label>
+      <input type="text" id="strength" name="strength" class="form-control" [(ngModel)]="medicine.strength" />
+    </div>
+
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" class="form-control" [(ngModel)]="medicine.quantity" />
+    </div>
+
+    <div class="form-group">
+      <label for="expirationDate">Expiration Date</label>
+      <input type="date" id="expirationDate" name="expirationDate" class="form-control" [(ngModel)]="medicine.expirationDate" />
+    </div>
+
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="number" id="price" name="price" class="form-control" [(ngModel)]="medicine.price"  />
+    </div>
+
+    <div class="form-group">
+    
+      <label for="prescriptionRequired">Prescription Required</label>
+      <input type="checkbox" id="prescriptionRequired" name="prescriptionRequired" [(ngModel)]="medicine.prescriptionRequired" />
+    
+    </div>
+
+    <button type="submit" class="btn btn-success">Update</button>
+  </form>
+</div>

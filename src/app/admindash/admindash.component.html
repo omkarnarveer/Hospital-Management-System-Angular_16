@@ -1,0 +1,39 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<div class="container">
+
+
+    <hr>
+    <h2 class="text-center">Patient List</h2>
+    <div class="alert-info text-center">
+        Welcome to the Appointment Dashboard. Please find the patient list below!
+    </div>
+    <hr>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Fees</th>
+                <th>Urgency</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let patient of patients">
+                <td>{{ patient.id }}</td> 
+                <td>{{ patient.name }}</td>
+                <td>{{ patient.age }}</td>
+                <td>{{ patient.fees }}</td>
+                <td>{{ patient.urgency }}</td>
+                <td class="action-buttons">
+                    <button (click)="deletePatient(patient.id)" class="btn btn-delete">
+                        <i class="fa fa-trash"></i> Delete
+                    </button>
+            </tr>
+        </tbody>
+    </table>
+</div>

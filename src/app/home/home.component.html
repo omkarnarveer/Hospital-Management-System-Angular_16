@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" class="ful">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Your hospital management system providing comprehensive solutions for healthcare management.">
+    <meta name="keywords" content="hospital management, healthcare, hospital admin, medical records, patient care">
+    <meta name="author" content="Your Name">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akronim&family=Aladin&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Battambang:wght@100;300;400;700;900&family=Chela+One&family=Eczar:wght@400..800&family=New+Amsterdam&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>WellCare - Hospital Management System</title>
+    </head>
+    <body>
+    
+        <div class="page-wrapper">
+            <!-- header -->
+            <header class = "header">
+                <div class="container">
+                    <nav>
+                        <div class="logo">
+                            <img src="assets/images/logo.png" alt="Medico Logo">
+                            <h1>WellCare</h1>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="javascript:void(0);" routerLink="/doctor-dashboard/view-medicine">Doctors</a></li>
+                            <li><a href="#" routerLink="/admin/Admin-Patient-list">Admin</a></li>
+                            <li><a href="#articles">Article</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        
+                <div class="element-one">
+                    <img src = "assets/images/element-img-1.png" alt = "" loading="lazy" alt="images">
+                </div>
+    
+                <div class="banner">
+                    <div class="container">
+                        <div class="banner-content">
+                            <div class="banner-left">
+                                <div class="content-wrapper">
+                                    <h1 class="banner-title">Best Care & Better Doctor</h1>
+                                    <p class="text text-black"> Welcome to Well Care, where we combine state-of-the-art technology with compassionate care to provide you with the best possible healthcare experience</p>
+                                    <a href = "#" class="btn btn-secondary">Consult today</a>
+                                </div>
+                            </div>
+    
+                            <div class = "banner-right d-flex align-items-center justify-content-end">
+    
+                                <picture class = "banner-right d-flex align-items-center justify-content-end">
+                                    <!-- SVG for larger screens -->
+                                    <source srcset="assets\images\hero.svg" media="(min-width: 992px)">
+                                    <img src="assets/images/team-amico.png" alt="Banner image" loading="lazy">
+                                </picture>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end of header -->
+            <main>
+                <section class = "sc-services">
+                    <div class = "services-shape">
+                        <img src = "assets\images\curve-shape-1.png" alt = "" loading="lazy" alt="images">
+                    </div>
+                    <div class="container">
+                        <div class = "services-content">
+                            <div class="title-box text-center">
+                                <div class = "content-wrapper">
+                                    <h3 class = "title-box-name">Our services</h3>
+                                    <div class = "title-separator mx-auto"></div>
+                                    <p class = "text title-box-text">We provide you the best choices for you. Adjust it to your health needs and make sure you undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+                                </div>
+                            </div>
+    
+    
+    
+                            <div class = "services-list">
+                                <div class = "services-item">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-1.png" alt = "service icon" loading="lazy">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Search doctor</h5>
+                                    <p class = "text">Choose your doctor form thousands of specialist, general and trusted hospitals.</p>
+                                </div>
+    
+                                <div class = "services-item">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-2.png" alt = "service icon" loading="lazy">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Online pharmacy</h5>
+                                    <p class = "text">Buy your medicines with our mobile application with a simple delivery system</p>
+                                </div>
+    
+                                <div class = "services-item">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-3.png" alt = "service icon" loading="lazy">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Consultation</h5>
+                                    <p class = "text">Free consultation with our trusted doctors and get the best recommendations.</p>
+                                </div>
+    
+                                <div class = "services-item">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-4.png" alt = "service icon" loading="lazy">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Details info</h5>
+                                    <p class = "text">Free consultation with our trusted doctors and get the best recommendations.</p>
+                                </div>
+    
+                                <div class = "services-item">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-5.png" alt = "service icon" loading="lazy">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Emergency care</h5>
+                                    <p class = "text">You can get 24/7 urgent care for yourself or your children and your lovely family.</p>
+                                </div>
+    
+                                <div class = "services-item">
+                                    <div class = "item-icon">
+                                        <img src = "assets/images/service-icon-6.png" alt = "service icon" loading="lazy">
+                                    </div>
+                                    <h5 class = "item-title fw-7">Tracking</h5>
+                                    <p class = "text">Track and save your mental history and health data</p>
+                                </div>
+                            </div>
+    
+                            <div class = " services-main-btn">
+                                <button type = "button" class = "btn btn-primary-outline">Learn more</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class = "sc-grid sc-grid-one">
+                    <div class="container">
+                        <div class = "grid-content d-grid align-items-center">
+                            <div class = "grid-img">
+
+                                <picture class = "banner-right d-flex align-items-center justify-content-end">
+                                    <!-- SVG for larger screens -->
+                                    <source srcset="assets/images/medicine-animate.svg" media="(min-width: 992px)">
+                                    <img src="assets/images/medicine-amico.png" alt="Banner image" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class = "grid-text">
+                                <div class = "content-wrapper text-start">
+                                    <div class = "title-box">
+                                        <h3 class = "title-box-name text-black">Leading healthcare providers</h3>
+                                        <div class = "title-separator mx-auto"></div>
+                                    </div>
+    
+                                    <p class = "text title-box-text text-white">Medimoor provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it's not just work. We take pride in the solutions we deliver</p>
+                                    <button type = "button" class = "btn btn-white-outline">Learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                
+    
+                <section class = "sc-grid sc-grid-two">
+                    <div class = "container">
+                        <div class = "grid-content d-grid align-items-center">
+                            <div class = "grid-img">
+                                <picture class = "banner-right d-flex align-items-center justify-content-end">
+                                    <!-- SVG for larger screens -->
+                                    <source srcset="assets/images/online-doctor-animate.svg" media="(min-width: 992px)">
+                                    <!-- png for small screen -->
+                                    <img src="assets/images/Online Doctor-amico.png" alt="Banner image" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class = "grid-text">
+                                <div class = "content-wrapper text-start">
+                                    <div class = "title-box">
+                                        <h3 class = "title-box-name">Experience Seamless Hospital Management</h3>
+                                        <div class = "title-separator mx-auto"></div>
+                                    </div>
+                                    <p class = "text title-box-text text-black">Our advanced hospital management system streamlines patient care, appointment scheduling, and medical inventory management. Access comprehensive healthcare solutions with ease and efficiency</p>
+                                    <button type = "button" class = "btn btn-primary-outline">
+                                        Read more
+            
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section class = "sc-articles">
+                    <div class = "articles-shape">
+                    </div>
+                    <div class = "container">
+                        <div class = "articles-content">
+                            <div class = "articles-element">
+                                <img src = "assets/images/element-img-2.png" alt="images" loading="lazy">
+                            </div>
+                            <div class = "title-box text-center" id="articles">
+                                <div class = "content-wrapper">
+                                    <h3 class = "title-box-name">Check out our latest article</h3>
+                                    <div class = "title-separator mx-auto"></div>
+                                </div>
+                            </div>
+                            
+                            <div class = "articles-list d-flex flex-wrap justify-content-center">
+                                <article class = "articles-item">
+                                    <div class = "item-img">
+                                        <img src = "assets/images/Orthopedic-bro.svg" loading="lazy" alt="images">
+                                    </div>
+                                    <div class = "item-body">
+                                        <div class = "item-title">Disease detection, check up in the laboratory</div>
+                                        <p class = "text">In this case, the role of the health laboratory is very important to do a disease detection ...</p>
+                                        <a href = "#" class = "item-link text-blue d-flex align-items-baseline">
+                                            <span class = "item-link-text">Read more</span>
+                                            <span class = "item-link-icon">
+                                                <i class = "fas fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </article>
+    
+                                <article class = "articles-item">
+                                    <div class = "item-img">
+                                        <img src = "assets/images/virus-animate.svg" loading="lazy" alt="images">
+                                    </div>
+                                    <div class = "item-body">
+                                        <div class = "item-title">Herbal medicines that are safe for consumption</div>
+                                        <p class = "text">Herbal medicine is very widely used at this time because of its very good for your health ...</p>
+                                        <a href = "#" class = "item-link text-blue d-flex align-items-baseline">
+                                            <span class = "item-link-text">Read more</span>
+                                            <span class = "item-link-icon">
+                                                <i class = "fas fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </article>
+    
+                                <article class = "articles-item">
+                                    <div class = "item-img">
+                                        <img src = "assets/images/acne-treatment-animate.svg" loading="lazy" alt="images">
+                                    </div>
+                                    <div class = "item-body">
+                                        <div class = "item-title">Natural care for healthy facial skin</div>
+                                        <p class = "text">A healthy lifestyle should start from now and also for your skin health ...</p>
+                                        <a href = "#" class = "item-link text-blue d-flex align-items-baseline">
+                                            <span class = "item-link-text">Read more</span>
+                                            <span class = "item-link-icon">
+                                                <i class = "fas fa-arrow-right"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+    
+            <footer class = "footer">
+                <div class = "container">
+                    <div class = "footer-content">
+                        <div class = "footer-list d-grid text-white">
+                            <div class = "footer-item">
+                                <a href = "#" class = "navbar-brand d-flex align-items-center">
+                                    <div class="logo">
+                                    
+                                    </div>
+                                    <span class = "brand-text fw-7">WellCare</span>
+                                </a>
+
+                                <p class = "text-white">Well Care provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+                                <p class = "text-white copyright-text">&copy; WellCare PTY LTD 2024. All rights reserved.</p>
+                            </div>
+    
+                            <div class = "footer-item">
+                                <h3 class = "footer-item-title">Company</h3>
+                                <ul class = "footer-links">
+                                    <li><a href = "#">About</a></li>
+                                    <li><a href = "#">Find a doctor</a></li>
+                                    <li><a href = "#">Apps</a></li>
+                                </ul>
+                            </div>
+    
+                 
+    
+                            <div class = "footer-item">
+                                <h3 class = "footer-item-title">Help</h3>
+                                <ul class = "footer-links">
+                                    <li><a href = "#">Help center</a></li>
+                                    <li><a href = "#">Contact support</a></li>
+                                    <li><a href = "#">Instructions</a></li>
+                                    <li><a href = "#">How it works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class = "footer-element-1">
+                    <img src = "assets/images/element-img-4.png"  alt="images" loading="lazy">
+                </div>
+                <div class = "footer-element-2">
+                    <img src = "assets/images/element-img-5.png"alt="images" loading="lazy">
+                </div>
+            </footer>
+        </div>
+    <script>
+        
+    $(document).ready(function(){
+        $('.feedback-slider').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            items: 1,
+            autoplay: true,
+            navText: ["<i class = 'fas fa-arrow-left'></i>", "<i class = 'fas fa-arrow-right'></i>"]
+        });
+    
+        // stop animation on resize
+        let resizeTimer;
+        $(window).resize(function(){
+            $(document.body).addClass('resize-animation-stopper');
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                $(document.body).removeClass('resize-animation-stopper');
+            }, 400);
+        });
+    
+        $('.navbar-show-btn').click(function(){
+            $('.navbar-box').addClass('navbar-box-show');
+        });
+    
+        $('.navbar-hide-btn').click(function(){
+            $('.navbar-box').removeClass("navbar-box-show");
+        })
+    });
+    </script>
+</body>
+</html>

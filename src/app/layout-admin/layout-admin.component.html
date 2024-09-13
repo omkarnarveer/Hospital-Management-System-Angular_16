@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Admin Dashboard</title>
+
+</head>
+<body>
+    <!-- layout-admin.component.html -->
+<div class="admin-layout">
+    <nav class="sidebar">
+      <div class="logo">
+        <img src="assets/images/user.png" alt="Logo" routerLink="/home">
+        <h1>Admin Dashboard</h1>
+      </div>
+      <ul>
+        <li><a routerLink="Admin-Patient-list">Patient List</a></li>
+        <li><a routerLink="appointmentList">Appointment List</a></li>
+        <li><a routerLink="create-appointment">Create Appointment</a></li>
+        <!-- Add other admin-related links here -->
+      </ul>
+    </nav>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
+</body>
+</html>
